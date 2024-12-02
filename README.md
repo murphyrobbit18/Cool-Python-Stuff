@@ -1,4 +1,3 @@
-# Hardware Reading Functions Pseudocode 
 ```markdown
 y = 3
 
