@@ -1,33 +1,31 @@
+## Lab 5 Pseudocode
+
 ```markdown
-y = 3
+sampX = empty list  
+sampY = empty list  
+sampZ = empty list  
 
-func getAccel(y)
-  samps =  readings from three axis accelerator
+def collectData(samples):  
+    accelX = collection of data in x-direction  
+    
+    for i in range of samples:  
+        sampX.append(accelX)  
+    
+    accelY = collection of data in y-direction  
+    
+    for i in range of samples:  
+        sampY.append(accelY)  
+    
+    accelZ = collection of data in z-direction  
+    
+    for i in range of samples:  
+        sampZ.append(accelZ)  
+    
+    AveX = sum of sampX / length of sampX  
+    AveY = sum of sampY / length of sampY  
+    AveZ = sum of sampZ / length of sampZ  
+    
+    return the values of AveX, AveY, and AveZ  
 
-  sampY = empty list
-  for i in range of y
-    add a value from samps to sampY
-
-  aveList = sum of the values / length of the values
-
-  if aveList < 0
-    is True
-
-  else
-    is False
-
-func rotary_dial
-  rotary_pos = reading of rotary dial
-
-  if rotary_pos is equal to zero
-    is True
-  else
-    is False
-
-func getLEDReading()
-  reading = button press reading
-
-  if there is a reading
-    is True
-  else
-    is False
+samples = integer value  
+call the function collectData(samples)
